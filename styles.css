@@ -22,7 +22,7 @@ body {
 }
 
 html {
-  font-family: Bai Jamjuree;
+  font-family: Bai Jamjuree, sans-serif;
 }
 body {
   background: linear-gradient(rgba(250, 250, 250, 0)),
@@ -98,6 +98,7 @@ main {
 }
 .ios-button {
   font-size: 1.1rem;
+  text-decoration: none;
   background-color: var(--Green500);
   border-top: none;
   border-left: none;
@@ -115,6 +116,7 @@ main {
 
 .mac-button {
   font-size: 1.1rem;
+  text-decoration: none;
   background-color: var(--Blue100);
   border-top: none;
   border-left: none;
