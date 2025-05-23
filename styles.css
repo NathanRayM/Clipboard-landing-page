@@ -1,0 +1,543 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary Colors */
+  --Green500: hsl(171, 66%, 44%);
+  --Blue100: hsl(233, 100%, 69%);
+
+  /* neutral colors */
+  --Gray700: hsl(210, 10%, 33%);
+  --Gray500: hsl(201, 11%, 66%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: Bai Jamjuree;
+}
+body {
+  background: linear-gradient(rgba(250, 250, 250, 0)),
+    url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 1.125rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+
+/* ========== Header Section ========== */
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 9.5rem;
+}
+
+.logo-img {
+  padding-bottom: 2rem;
+  position: relative;
+  left: -100vw;
+  opacity: 0;
+  transition: none;
+}
+
+/*=== start logo animation ===*/
+.fly-in {
+  animation: flyInFromLeft 1s ease-out forwards;
+}
+
+@keyframes flyInFromLeft {
+  from {
+    left: -100vw;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+/*=== end logo animation === */
+
+.header-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: var(--Gray700);
+}
+.header-description {
+  width: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.6px;
+  color: var(--Gray500);
+}
+
+.header-buttons {
+  padding-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.ios-button {
+  font-size: 1.1rem;
+  background-color: var(--Green500);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid hsl(171, 66%, 39%);
+  color: white;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 40px;
+  box-shadow: 0px 8px 18px hsla(171, 66%, 44%, 0.5);
+  cursor: pointer;
+}
+.ios-button:hover {
+  background-color: hsl(171, 66%, 48%);
+}
+
+.mac-button {
+  font-size: 1.1rem;
+  background-color: var(--Blue100);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid hsl(233, 100%, 62%);
+  color: white;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 40px;
+  box-shadow: 0px 8px 18px hsla(201, 11%, 66%, 0.5);
+  cursor: pointer;
+}
+
+.mac-button:hover {
+  background-color: hsl(233, 100%, 75%);
+}
+
+/*=== start button automation ===*/
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 0.4s ease-in-out;
+}
+
+/*=== end button automation ===*/
+
+/* ========== snippet section ========== */
+
+.snippets-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5.5rem;
+}
+.snippets-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.snippets-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--Gray700);
+}
+.snippets-description {
+  font-size: 1.1rem;
+  text-align: center;
+  width: 50%;
+  color: var(--Gray500);
+  line-height: 1.7rem;
+  letter-spacing: 0.6px;
+}
+
+.snippet-features-container {
+  display: flex;
+  gap: 7rem;
+}
+
+.snippet-image {
+  width: 100%;
+  position: relative;
+  left: -3rem;
+  overflow: hidden;
+}
+
+.snippet-card-right {
+  padding-top: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.snippet-desc-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.snippet-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--Gray700);
+  letter-spacing: 0.5px;
+}
+.snippet-paragraph {
+  font-size: 1rem;
+  color: var(--Gray500);
+  line-height: 1.6rem;
+  width: 56%;
+}
+
+/* ========== access section ========== */
+
+.access-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding-bottom: 1rem;
+}
+
+.access-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.access-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--Gray700);
+}
+.access-description {
+  font-size: 1.1rem;
+  text-align: center;
+  width: 80%;
+  color: var(--Gray500);
+  line-height: 1.8rem;
+  letter-spacing: 0.6px;
+}
+
+.access-image {
+  max-width: 100%;
+  position: relative;
+  bottom: -6rem;
+}
+
+/* ========== workflow section ========== */
+
+.workflow-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.7rem;
+}
+
+.workflow-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.workflow-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--Gray700);
+}
+
+.workflow-description {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--Gray500);
+  line-height: 1.8rem;
+  letter-spacing: 0.6px;
+}
+
+.workflow-card-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  padding-bottom: 7rem;
+}
+
+.workflow-card-top-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8rem;
+  text-align: center;
+}
+
+.workflow-img1 {
+  height: 32px;
+  object-fit: contain;
+}
+
+.workflow-top-heading {
+  font-size: 1.5rem;
+  color: var(--Gray700);
+  font-weight: 600;
+}
+
+.workflow-paragraph {
+  font-size: 1rem;
+  width: 94%;
+  color: var(--Gray500);
+  line-height: 1.8rem;
+  text-align: center;
+  margin-top: -2rem;
+}
+.workflow-card-bottom {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.workflow-img {
+  max-width: 100%;
+}
+
+/* ========== clipboard section ========== */
+
+.clipboard-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 9.5rem;
+}
+
+.clipboard-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--Gray700);
+}
+
+.clipboard-description {
+  font-size: 1.1rem;
+  text-align: center;
+  width: 50%;
+  color: var(--Gray500);
+  line-height: 1.8rem;
+  letter-spacing: 0.6px;
+}
+footer {
+  padding: 2.3rem 0 2.3rem 0;
+  background-color: hsla(201, 11%, 66%, 0.18);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-left {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-center {
+  display: flex;
+  gap: 5.22rem;
+}
+.footer-right {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 1.5rem;
+  object-fit: contain;
+}
+
+.social-icon {
+  fill: var(--Gray700);
+}
+.social-icon:hover {
+  fill: var(--Green500);
+}
+
+.footer-img {
+  width: 3.5rem;
+  object-fit: contain;
+}
+
+.footer-center-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.footer-center-card a {
+  color: var(--Gray700);
+  text-decoration: none;
+}
+
+.footer-center-card a:hover {
+  color: var(--Green500);
+}
+
+/* ========== start media query========== */
+
+@media (max-width: 400px) {
+  body {
+    background: linear-gradient(rgba(250, 250, 250, 0)),
+      url("images/bg-header-mobile.png");
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header-heading {
+    font-size: 2rem;
+    width: 85%;
+  }
+  .header-description {
+    font-size: 1rem;
+    width: 85%;
+    letter-spacing: 0.3px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .snippets-heading,
+  .access-heading,
+  .workflow-heading,
+  .clipboard-heading {
+    font-size: 1.7rem;
+    width: 85%;
+  }
+
+  .snippets-description,
+  .access-description,
+  .workflow-description,
+  .clipboard-description {
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    width: 85%;
+  }
+  .snippet-features-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .snippet-card-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .snippet-card-right {
+    gap: 3rem;
+  }
+
+  .snippet-desc-card {
+    align-items: center;
+  }
+
+  .snippet-image {
+    left: 0;
+    width: 85%;
+  }
+
+  .snippet-paragraph {
+    width: 80%;
+    text-align: center;
+  }
+
+  .workflow-section {
+    gap: 1rem;
+  }
+
+  .workflow-card-top {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 3rem;
+  }
+
+  .workflow-paragraph {
+    width: 100%;
+  }
+
+  .workflow-card-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 3.5rem;
+  }
+
+  .workflow-img {
+    width: 85%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .footer-center {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer-center-card {
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer-center-card a {
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+}
