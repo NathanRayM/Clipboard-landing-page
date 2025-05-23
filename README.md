@@ -1,0 +1,33 @@
+![Clipboard landing page](https://github.com/NathanRayM/Clipboard-landing-page/blob/main/desktop-design.jpg)
+
+<h1 align="center">Clipboard landing page</h1>
+
+<div align="center">
+
+[Live](https://nathanraym.github.io/Clipboard-landing-page//)
+| [Solution](https://github.com/NathanRayM/Clipboard-landing-page.git)
+| [Challenge](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9)
+
+Solution for a challenge from [frontendmentor.io](https://www.frontendmentor.io/)
+
+</div>
+
+## About The Project
+
+Put your layout skills to the test with this HTML & CSS landing page challenge. This challenge includes a design for hover states.
+
+## Built with
+
+- HTML5
+- CSS custom properties
+- Flex
+- JavaScript
+- Desktop-first workflow
+
+## What I learned
+
+This was great for practicing more of the HTML and CSS box model, flex, responsive design, and I added a very small amount of JavaScript.
+
+## Acknowledgments
+
+A big thank you to anyone providing feedback on my [solution](). It definitely helps to find new ways to code and find easier solutions!
