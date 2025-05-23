@@ -451,6 +451,10 @@ footer {
     flex-direction: column;
     width: 85%;
   }
+  .ios-button,
+  .mac-button {
+    text-align: center;
+  }
 
   .snippets-heading,
   .access-heading,
