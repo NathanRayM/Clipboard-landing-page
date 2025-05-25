@@ -431,7 +431,7 @@ footer {
 @media (max-width: 875px) {
   body {
     background: linear-gradient(rgba(250, 250, 250, 0), rgba(250, 250, 250, 0)),
-      url("images/bg-header-mobile.png");
+      url("images/bg-header-desktop.png");
     font-size: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
